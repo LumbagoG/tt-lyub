@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @media (prefers-color-scheme: light) {
   .preloader {
     background: #DFDBE5;
@@ -11,7 +12,7 @@
     background: #000910;
   }
   .preloader svg {
-    fill: #231c4768;
+    fill: #1a3d65;
   }
 }
 .preloader {
@@ -53,8 +54,21 @@
   box-sizing: border-box;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  image-rendering: optimizeQuality;
   margin: 0;
   padding: 0;
+  font-family: "Roboto Light", "sans-serif";
+}
+@media (prefers-color-scheme: light) {
+  * {
+    color: #000910;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  * {
+    color: #DFDBE5;
+  }
 }
 
 @media (prefers-color-scheme: light) {
