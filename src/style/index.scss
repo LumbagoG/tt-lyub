@@ -1,8 +1,3 @@
-// Modules
-@import "preloader";
-@import "sidebar";
-@import "main";
-
 // Mixins
 @import "./mixins/respond-to";
 @import "./mixins/flexbox";
@@ -46,6 +41,12 @@ body {
   width: 100%;
   height: 100%;
 }
+
+// Modules
+@import "preloader";
+@import "sidebar";
+@import "main";
+
 
 @media (prefers-color-scheme: light) {
   @import "./variables/theme-light";

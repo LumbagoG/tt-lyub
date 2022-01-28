@@ -2,7 +2,7 @@
 // Path - style/mixins/respond-to.scss
 
 $breakpoints: (
-  'small':  ( min-width:  767px ),
-  'medium': ( min-width:  992px ),
-  'large':  ( min-width: 1200px )
+  'small':  ( max-width:  600px ),
+  'medium': ( max-width:  1100px ),
+  'large':  ( min-width: 1101px )
 ) !default;

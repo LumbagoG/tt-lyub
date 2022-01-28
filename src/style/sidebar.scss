@@ -10,9 +10,63 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+// Media breakpoints
+// Large screen
+@include respond-to('large') {
+  .sidebar {
+    & .nav-ul {
+      &-item {
+        & svg {
+          width: 3.9em;
+        }
+
+        &-link {
+          font-size: $font-size-sidebar-lg;
+        }
+      }
+    }
+  }
+}
+
+// Medium screen
+@include respond-to('medium') {
+  .sidebar {
+    & .nav-ul {
+      &-item {
+        & svg {
+          width: 3.5em;
+        }
+
+        &-link {
+          font-size: $font-size-sidebar-md;
+        }
+      }
+    }
+  }
+}
+
+// Small screen
+@include respond-to('small') {
+  .sidebar {
+    & .nav-ul {
+      &-item {
+        & svg {
+          width: 3em;
+        }
+
+        &-link {
+          font-size: $font-size-sidebar-sm;
+        }
+      }
+    }
+  }
+}
+
+// Sidebar
 .sidebar {
   @include flexbox(flex, column, center, space-between);
 
+  // Light theme
   @media (prefers-color-scheme: light) {
     @import "./variables/theme-light";
 
@@ -29,6 +83,7 @@
     }
   }
 
+  // Dark theme
   @media (prefers-color-scheme: dark) {
     @import "./variables/theme-dark";
 

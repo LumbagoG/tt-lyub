@@ -1,5 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  image-rendering: optimizeQuality;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Light", "sans-serif";
+  font-size: calc(0.7rem + 0.15vw + 0.15vh);
+}
+@media (prefers-color-scheme: light) {
+  * {
+    color: #000910;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  * {
+    color: #DFDBE5;
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
 @media (prefers-color-scheme: light) {
   .preloader {
     background: #DFDBE5;
@@ -51,6 +85,30 @@
   display: none;
 }
 
+@media (min-width: 1101px) {
+  .sidebar .nav-ul-item svg {
+    width: 3.9em;
+  }
+  .sidebar .nav-ul-item-link {
+    font-size: calc(0.7rem + 0.15vw + 0.15vh);
+  }
+}
+@media (max-width: 1100px) {
+  .sidebar .nav-ul-item svg {
+    width: 3.5em;
+  }
+  .sidebar .nav-ul-item-link {
+    font-size: calc(0.7rem + 0.15vw + 0.15vh);
+  }
+}
+@media (max-width: 600px) {
+  .sidebar .nav-ul-item svg {
+    width: 3em;
+  }
+  .sidebar .nav-ul-item-link {
+    font-size: calc(0.7rem + 0.15vw + 0.15vh);
+  }
+}
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -63,7 +121,7 @@
     background-color: #FFFF;
   }
   .sidebar__nav .nav-ul-item-link {
-    color: #003a66;
+    color: rgba(7, 27, 44, 0.41);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -163,40 +221,6 @@
 .main {
   width: 100%;
 }
-* {
-  box-sizing: border-box;
-  font-smooth: always;
-  -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-  image-rendering: optimizeQuality;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto Light", "sans-serif";
-  font-size: calc(0.8rem + 0.4vw + 0.1vh);
-}
-@media (prefers-color-scheme: light) {
-  * {
-    color: #000910;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  * {
-    color: #DFDBE5;
-  }
-}
-
-html {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
-}
-
 @media (prefers-color-scheme: light) {
   body {
     background-color: #DFDBE5;
